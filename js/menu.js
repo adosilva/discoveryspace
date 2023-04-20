@@ -1,0 +1,1 @@
+/* Arquivo das automações do Menu Hamburger */
