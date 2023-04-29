@@ -53,9 +53,44 @@ body, ul {
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
-    padding-top: 85px;
+    padding-top: 75px;
     width: 100%;
 }
 #carouselExampleInterval img {
-    height: 200px;
+    height: 500px;
+    width: auto;
+}
+
+/* CSS Estilos Banner */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 50px;
+    background-color: #005caa;
+}
+.section-banner-home img {
+    height: 400px;
+    width: auto; /* Verificar responsivo */
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;    
+}
+.section-banner-home .texto-banner a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #fff;
+    padding: 4px 14px;
+    font-size: 15px;
 }
