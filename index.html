@@ -7,7 +7,24 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>..:: Discovery Space ::..</title>
+    <style>
+        .carousel-inner > .carousel-item > img {
+        width: 100%;
+        margin: 1%;
+        max-height: 500px;
+        padding-top: 75px;
+        }
+        @media (max-width: 600px) {
+            .carousel-inner > .carousel-item > img {
+            width: 100%;
+            margin: 1%;
+            max-height: 360;
+            padding-top: 75px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Aula 24/04/2023 - HTML -->
@@ -29,67 +46,72 @@
     </header>
     <!-- Fim Menu Responsivo -->
     <!-- Início Carousel Página Principal -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"="">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-                <img
-                src="./img/carousel_1.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
+    <div class="container">    
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img
+                    src="./img/carousel_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="1600">
+                    <img
+                    src="./img/carousel_2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="1600">
+                    <img
+                    src="./img/carousel_3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <div class="carousel-item" data-bs-interval="1600">
+                    <img
+                    src="./img/carousel_4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
+                <!-- Shift + Alt - Selecionar linhas e alterar diversas linhas com mesmo valor -->
+                <div class="carousel-item" data-bs-interval="1600">
+                    <img
+                    src="./img/carousel_1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    />
+                </div>
             </div>
-            <div class="carousel-item" data-bs-interval="1600">
-                <img
-                src="./img/carousel_2.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1600">
-                <img
-                src="./img/carousel_3.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-bs-interval="1600">
-                <img
-                src="./img/carousel_4.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <!-- Shift + Alt - Selecionar linhas e alterar diversas linhas com mesmo valor-->
-            <div class="carousel-item" data-bs-interval="1600">
-                <img
-                src="./img/carousel_1.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
+            <!-- Fim imagens Carousel-->
+            <!-- Início controle do Carousel -->
+            <button
+                class="carousel-control-prev"
+                data-bs-target="#carouselExampleInterval"
+                type="button"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                data-bs-target="#carouselExampleInterval"
+                type="button"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- Fim imagens Carousel-->
-        <!-- Início controle do Carousel -->
-        <button
-            class="carousel-control-prev"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     <!-- Fim do controle do Carousel -->
+    
+    
+    
     <!-- Fim do Carousel -->
     <!-- Início Banner -->
     <div class="section-banner-home">
@@ -183,5 +205,7 @@
 </body>
 
     <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>

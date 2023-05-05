@@ -5,6 +5,7 @@ body, ul {
     margin: 0px;
     padding: 0px;
 }
+
 #menu a {
     color: black;
     text-decoration: none;
@@ -51,16 +52,22 @@ body, ul {
 #btn-mobile {
     display: none;
 }
-#carouselExampleInterval {
+
+
+
+/*
+#carouselExampleInterval #carousel-inner {
     position: relative;
     z-index: 10;
+    gap: 0.5rem;
     padding-top: 75px;
     width: 100%;
 }
-#carouselExampleInterval img {
+ #carouselExampleInterval img {
     height: auto;
     width: 100%;
-}
+} 
+*/
 
 /* CSS Estilos Banner */
 .section-banner-home {
