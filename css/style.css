@@ -43,6 +43,14 @@ body, ul {
     justify-content: space-between;
     background: #e7e7e7;
 }
+
+#header figcaption {
+    font-family: 'Bebas Neue';
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 25px;
+}
+
 #menu {
     display: flex;
     list-style: none;
@@ -51,20 +59,29 @@ body, ul {
 #btn-mobile {
     display: none;
 }
-
 /*
-#carouselExampleInterval #carousel-inner {
+.carousel-inner .carousel-item img {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 500px;
+    padding-top: 85px;
+}
+*/
+
+#carouselExampleInterval {
     position: relative;
     z-index: 10;
-    gap: 0.5rem;
-    padding-top: 75px;
-    width: 100%;
+    padding-top: 80px;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-shadow: 6px 6px 6px #0000007a;
+    transition: 0.3s;
 }
- #carouselExampleInterval img {
-    height: auto;
+ #carouselExampleInterval .carousel-inner img {
+    max-height: 550px;
     width: 100%;
 } 
-*/
+
 
 /* CSS Estilos Banner */
 .section-banner-home {
@@ -72,7 +89,7 @@ body, ul {
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: #005caa;
+    background-color: #5d5d5d;
 }
 .section-banner-home img {
     height: 400px;
@@ -87,16 +104,18 @@ body, ul {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
+    color: white;
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    color: white;    
 }
 .section-banner-home .texto-banner a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: #fff;
-    padding: 4px 14px;
+    background-color: #424242;
+    padding: 4px 24px;
     font-size: 15px;
 }
 /* Fim css estilos Banner */
