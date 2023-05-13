@@ -187,9 +187,20 @@ body, ul {
 }
 /* Fim CSS Novidades */
 /* Início CSS Galeria */
-
 .galeria {
     margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top / right / botton / left      >  Ex: margin: 60px 60px 60px 60px;
+       Quando tivermos 3 valores = top / right and left / botton
+    >  Ex: margin: 60px auto 60px;
+       Quanto tivermos 2 valores = top and botton / right and left
+    >  Ex: margin: 60px 30px;
+       Quando tivermos 1 valor = top and botton and right and left
+    >  Ex: margin: 60px;
+    >> Essa regra vale também para padding. <<
+       */
+}
+.galeria .container {
+    margin-left: 11%;
 }
 
 .galeria h2 {
@@ -206,3 +217,41 @@ body, ul {
     width: 30%;
     margin: 14px auto 50px;
 }
+.galeria .gallery img {
+    width: 80%;
+    height: 80%;
+}
+/* Fim CSS Galeria */
+
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .container img {
+    height: 50%;
+    width: 50%;
+}
+.rodape .info-contato p {
+    margin: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer */
