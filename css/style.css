@@ -73,14 +73,18 @@ body, ul {
     position: relative;
     z-index: 10;
     padding-top: 80px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     box-shadow: 6px 6px 6px #0000007a;
     transition: 0.3s;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
 }
  #carouselExampleInterval .carousel-inner img {
-    max-height: 550px;
-    width: 100%;
+    height: 600px;
+    width: 90%;
 } 
 
 @media (max-width: 600px) {
@@ -149,14 +153,14 @@ body, ul {
 /* CSS Estilos Banner */
 .section-banner-home {
     width: 100%;
-    height: 500px;
-    margin-top: 10px;
+    height: auto;
     padding: 50px;
     background-color: #5d5d5d;
+    display: ruby-base-container;
 }
 .section-banner-home img {
-    height: 400px;
-    width: auto; /* Verificar responsivo */
+    max-height: 400px;
+    width: 100%; /* Verificar responsivo */
 }
 .section-banner-home .texto-banner {
     margin-top: 30px;
