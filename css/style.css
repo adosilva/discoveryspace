@@ -287,7 +287,16 @@ body, ul {
 .galeria .gallery img {
     width: 80%;
     height: 80%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;  
 }
+.galeria .gallery img:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
 /* Fim CSS Galeria */
 
 /* Início CSS Footer */
@@ -298,7 +307,16 @@ body, ul {
 .rodape .container img {
     height: 50%;
     width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;  
 }
+.rodape .container img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
 .rodape .info-contato p {
     margin: 0;
 }
@@ -315,7 +333,7 @@ body, ul {
 }
 .rodape .redes-sociais img {
     width: 45px;
-    height: 40px;
+    height: 45px;
 }
 .rodape p.direitos {
     text-align: center;

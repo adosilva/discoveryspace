@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+    <title>..:: Discovery Space ::..</title>
+</head>
+<body>
+    <!-- Aula 24/04/2023 - HTML -->
+    <!-- Início Menu Responsivo -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/logo.png" alt="Logo Discovery Space"></a>
+        <figcaption></figcaption>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+                <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu Responsivo -->
+    <!-- Início Carousel Página Principal -->
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img
+                        src="./img/carousel_1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img
+                        src="./img/carousel_2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img
+                        src="./img/carousel_3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img
+                        src="./img/carousel_4.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        />
+                    </div>
+                    <!-- Shift + Alt - Selecionar linhas e alterar diversas linhas com mesmo valor -->
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img
+                        src="./img/carousel_1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        />
+                    </div>
+                </div>
+                <!-- Fim imagens Carousel-->
+                <!-- Início controle do Carousel -->
+                <button
+                    class="carousel-control-prev"
+                    data-bs-target="#carouselExampleInterval"
+                    type="button"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    data-bs-target="#carouselExampleInterval"
+                    type="button"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+     
+
+    <!-- Fim do controle do Carousel -->
+    
+    <!-- Fim do Carousel -->
+    <!-- Início Banner -->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./img/banner.jpg" alt="banner-home">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block">
+                        <h1>Venha conhecer o nosso novo lançamento!</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum id rem dicta corrupti quibusdam ea, animi maxime illo distinctio quasi aspernatur doloribus quam eligendi ipsa perferendis quisquam modi sequi eum.</p>
+                        <a href="produtos.html">Saiba Mais</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do Banner -->
+    <!-- Início Destaque -->
+    <div class="destaque">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <!-- Início da tag section do texto destaque -->
+                <section class="col-12">
+                    <h2>Que tal conhecer nossas imagens capturadas no espaço?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laborum consequatur dignissimos ipsum ex suscipit nihil nemo ipsam voluptate corporis blanditiis, illum facilis expedita, quo dolorum nam voluptatibus veritatis nostrum.</p>
+                </section>
+                <!-- Fim da tag section do texto destaque -->
+                <!-- Início da imagem 1 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_1.jpg" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 1 -->
+                <!-- Início da imagem 2 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_1.jpg" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 2 -->
+                <!-- Início da imagem 3 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_2.jpg" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 3 -->
+                <!-- Início da imagem 4 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_3.webp" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 4 -->
+                <!-- Início da imagem 5 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_4.jpg" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 5 -->
+                <!-- Início da imagem 6 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/destaque_5.jpg" alt="produto destaque" width="100%"></a>
+                        <figcaption>Space <br> 2023</figcaption>
+                    </figure>
+                </div>
+                <!-- Fim da imagem 6 -->
+                <!-- Início Saiba Mais -->
+                <div class="col-12">
+                    <a href="#">Saiba Mais</a>
+                </div>
+                <!-- Fim Saiba Mais -->
+            </div>
+        </div>
+    </div>
+    <!-- Fim destaque -->
+    <!-- Início do texto novidades -->
+    <div class="novidades" id="novidades-mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="text-body">
+                        <h2>Conheça nossas novidades</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, tenetur vero ad rerum dolorem maiores. Temporibus consequatur dicta sapiente officia illum aspernatur aliquam corrupti magnam. Vero iste deserunt quia tempore.</p>
+                        <a class="btn-banner" href="" target="_blank">Saiba mais</a>
+                    </section>
+                </div>
+                <!-- Fim Texto Novidades -->
+                <!-- Início imagem novidades -->
+                <div class="col-md-6">
+                    <figure>
+                        <img src="./img/destaque_1.jpg" class="img-fluid" alt="banner-home">
+                    </figure>
+                </div>
+                <!-- Fim imagem novidades -->
+            </div>
+        </div>
+    </div>
+    <!-- Alt + Shift + F > corrige a identação do código >> Escolha << 2a opção >> Recursos da Linguagem HTML -->
+    <!-- Início Galeria -->
+    <div class="galeria d-flex align-itens-center">
+        <div class="container">
+            <div class="row">
+                <!-- Início texto galerias -->
+                <div class="col-12">
+                    <section class="texto-galeria">
+                        <h2>Conheça nossa galeria</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veniam id ipsa possimus iste temporibus nobis explicabo nisi impedit voluptatum architecto iusto reprehenderit culpa quod nulla, labore neque repudiandae provident.</p>
+                    </section>
+                </div>
+                <!-- Fim texto galerias -->
+                <!-- Início imagem 1 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 1 Galeria -->
+                <!-- Início imagem 2 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 2 Galeria -->
+                <!-- Início imagem 3 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 3 Galeria -->
+                <!-- Início imagem 4 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 4 Galeria -->
+                <!-- Início imagem 5 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 5 Galeria -->
+                <!-- Início imagem 6 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 6 Galeria -->
+                <!-- Início imagem 7 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 7 Galeria -->
+                <!-- Início imagem 8 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 8 Galeria -->
+                <!-- Início imagem 9 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 9 Galeria -->
+                <!-- Início imagem 10 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 10 Galeria -->
+                <!-- Início imagem 11 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 11 Galeria -->
+                <!-- Início imagem 12 Galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/destaque_3.webp" class="img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 12 Galeria -->
+            </div>
+        </div>
+    </div>
+    <!-- Fim Galeria -->
+    <!-- Início Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row m-0">
+                <!-- Início Logo -->
+                <div class="col-md-4">
+                    <figure>
+                        <img src="./img/logo.png" alt="logo_rodape">
+                    </figure>
+                </div>
+                <!-- Fim logo -->
+                <!-- Início texto rodape -->
+                <div class="col-md-4">
+                    <div class="info-contato">
+                        <p>E-mail:</p>
+                        <p>adosilva.senai@gmail.com</p><br>
+                        <p>Endereço:</p>
+                        <p>Avenida ABC, 124</p><br>
+                        <p>Telefone:</p>
+                        <p>+55 (15) 99999-1234</p>
+                    </div>
+                </div>
+                <!-- Fim texto rodape -->
+                <!-- Início das mídias sociais -->
+                <div class="col-md-4">
+                    <figure class="redes-sociais">
+                        <a href="#"><img src="./img/redes_sociais/face.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/insta.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/youtube.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/linkedin.png" alt=""></a>
+                    </figure>
+                    <br>
+                    <a href="index.html">Home</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="streaming.html">#Streaming</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <!-- Fim das mídias sociais -->
+                <!-- Início dos Direitos Autorais -->
+                <div class="col-12">
+                    <p class="direitos">Direitos Autorais Reservado.</p>
+                </div>
+                <!-- Fim dos Direitos Autorais -->
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+    
+
+</body>
+
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js" ></script>
+    
+
+</html>
