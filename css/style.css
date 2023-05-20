@@ -49,7 +49,7 @@ body, ul {
     font-family: 'Bebas Neue';
     -webkit-text-stroke: 1px black;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #menu {
@@ -341,3 +341,41 @@ body, ul {
 }
 /* Fim CSS Footer . */
 
+/* Início CSS Streaming */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.embed-container {
+    display: flex;
+}
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    box-shadow: gray 0.5em 0.5em 0.3em;
+}
+
+.embed-container .col-sm-3 {
+    margin-top: 10px;
+}
+
+/* Fim CSS Streaming */
