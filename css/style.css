@@ -426,7 +426,7 @@ body, ul {
     height: 3px;
     left: 0;
     position: absolute;
-    width: 130px;
+    width: 0px;
 }
 .form-horizontal {
     border-radius: 107px;
@@ -438,6 +438,13 @@ body, ul {
     padding: 10px 0 10px 5px;
     width: 100%;
 }
+.form-control[type="email"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+
 .form-control-msg[type="text"] {
     margin: 10px 0 0;
     padding: 10px 0 10px 5px;
@@ -474,3 +481,13 @@ body, ul {
 }
 /* Fim CSS Contato */
 /* Início CSS Mapa */
+.map{
+    width: 100%;
+    height: 300px;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fim CSS Mapa */
