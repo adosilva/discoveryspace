@@ -304,16 +304,16 @@ body, ul {
 .rodape {
     padding: 50px 50px 0;
 }
-.rodape .container #logo_rodape {
+.rodape .container #img-logo {
     height: 50%;
     width: 50%;
     padding-left: 10px;
     transition: transform .3s;
     display: block;  
 }
-.rodape .container #logo_rodape:hover {
+.rodape .container #img-logo:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
 }
 
 
@@ -512,25 +512,38 @@ body, ul {
     height: 60px;
 }
 
-.whatsapp .pulando {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    animation: pulando .4s cubic-bezier(.53, -0.03, .67, 1.06);
+/* Efeito Pulse */
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
     animation-direction: alternate;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
-@keyframes pulando {
+@-webkit-keyframes pulse {
     0% {
-        transform: translateY(0px);
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
     }
     100% {
-        transform: translateY(100%);
-        width: 70px;
-        height: 40px;
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);
     }
 }
 
+/* Fim Efeito Pulse */
 
 /* Fim Whatsapp */
 
