@@ -43,6 +43,7 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
+    box-shadow: 6px 6px 6px #0000007a;
 }
 
 #header figcaption {
@@ -72,19 +73,19 @@ body, ul {
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
-    padding-top: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
     box-shadow: 6px 6px 6px #0000007a;
     transition: 0.3s;
     width: 100%;
-    height: auto;
     display: inline-flex;
 }
  #carouselExampleInterval .carousel-inner img {
-    height: 600px;
-    width: 90%;
+    height: auto;
+    /* width: 90%; */
 } 
 
 @media (max-width: 600px) {
@@ -154,11 +155,12 @@ body, ul {
 .section-banner-home {
     width: 100%;
     height: auto;
-    padding: 50px;
+    margin-top: 0px;
     background-color: #5d5d5d;
     display: ruby-base-container;
 }
 .section-banner-home img {
+    padding: 20px;
     max-height: 400px;
     width: 100%; /* Verificar responsivo */
 }
@@ -337,7 +339,7 @@ body, ul {
     padding-left: 0;
     margin-left: 0.7rem;
     transition: transform .3s;
-    border-radius: 5px; /* Arredondando div do obejto redes sociais */
+    border-radius: 15px; /* Arredondando div do obejto redes sociais */
 }
 .rodape .redes-sociais img:hover {
     z-index: 1;
@@ -504,7 +506,7 @@ body, ul {
 /* Início Whatsapp */
 .whatsapp {
     position: fixed;
-    z-index: 2;
+    z-index: 200;
     top: 200px;
     right: 20px;
 }
