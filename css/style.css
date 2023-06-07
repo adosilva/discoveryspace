@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
+
 /* Arquivo responsável pelos estilos */
 /* Aula 24/04/2023 - Estilos do Menu */
-body, ul {
+body,
+ul {
     margin: 0px;
     padding: 0px;
 }
+
 #menu a {
     color: black;
     text-decoration: none;
@@ -21,10 +24,12 @@ body, ul {
     transition: 0.3s;
     text-shadow: 4px 4px 6px #0000007a;
 }
+
 #logo img:hover {
     box-shadow: 4px 4px 6px #0000007a;
     transition: 0.3s;
 }
+
 #logo img {
     float: left;
     height: 55px;
@@ -32,6 +37,7 @@ body, ul {
     top: 0px;
     left: 0px;
 }
+
 #header {
     width: 100%;
     position: relative;
@@ -58,9 +64,11 @@ body, ul {
     list-style: none;
     gap: 0.5rem;
 }
+
 #btn-mobile {
     display: none;
 }
+
 /*
 .carousel-inner .carousel-item img {
     width: 100%;
@@ -83,10 +91,11 @@ body, ul {
     width: 100%;
     display: inline-flex;
 }
- #carouselExampleInterval .carousel-inner img {
+
+#carouselExampleInterval .carousel-inner img {
     height: auto;
     /* width: 90%; */
-} 
+}
 
 @media (max-width: 600px) {
     #menu {
@@ -103,17 +112,20 @@ body, ul {
         visibility: hidden;
         overflow-y: hidden;
     }
+
     #menu li {
         padding-top: 30px;
         padding-bottom: 0px;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
+
     #nav.active #menu {
         height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: hidden;
     }
+
     #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
@@ -123,28 +135,39 @@ body, ul {
         cursor: pointer;
         gap: 0.5rem;
     }
+
     #hamburger {
-        border-top: 2px solid; /* Melhorando  hamburger >> Espessura da linha  */
-        width: 30px; /* Alterando a Largura do hamburger */
-        color: #003f91; /* Alterando a cor do hamburger */
+        border-top: 2px solid;
+        /* Melhorando  hamburger >> Espessura da linha  */
+        width: 30px;
+        /* Alterando a Largura do hamburger */
+        color: #003f91;
+        /* Alterando a cor do hamburger */
     }
+
     #hamburger::after,
     #hamburger::before {
         content: '';
         display: block;
-        width: 30px; /* Alterando a Largura do hamburger */
+        width: 30px;
+        /* Alterando a Largura do hamburger */
         height: 2px;
         background: currentColor;
-        margin-top: 4px; /* Altera o espaçamento entre o hamburger */
+        margin-top: 4px;
+        /* Altera o espaçamento entre o hamburger */
         position: relative;
-        border-top: 2px solid; /* Melhorando  hamburger >> Espessura da linha  */
+        border-top: 2px solid;
+        /* Melhorando  hamburger >> Espessura da linha  */
     }
+
     #nav.active #hamburger {
         border-top-color: transparent;
     }
+
     #nav.active #hamburger::before {
         transform: rotate(135deg);
     }
+
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
@@ -159,15 +182,19 @@ body, ul {
     background-color: #5d5d5d;
     display: ruby-base-container;
 }
+
 .section-banner-home img {
     padding: 20px;
     max-height: 400px;
-    width: 100%; /* Verificar responsivo */
+    width: 100%;
+    /* Verificar responsivo */
 }
+
 .section-banner-home .texto-banner {
     margin-top: 30px;
     font-size: 22px;
 }
+
 .section-banner-home .texto-banner h1 {
     font-size: 30px;
     width: 60%;
@@ -175,11 +202,13 @@ body, ul {
     padding-bottom: 20px;
     color: white;
 }
+
 .section-banner-home .texto-banner p {
     font-size: 15px;
     margin-bottom: 20px;
-    color: white;    
+    color: white;
 }
+
 .section-banner-home .texto-banner a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -187,6 +216,7 @@ body, ul {
     padding: 4px 24px;
     font-size: 15px;
 }
+
 /* Fim css estilos Banner */
 
 /* Início css destaque */
@@ -197,12 +227,14 @@ body, ul {
     font-size: 24px;
     font-weight: bold;
 }
+
 .destaque p {
     width: 77%;
     text-align: center;
     font-size: 14px;
     margin: 30px auto;
 }
+
 .destaque figcaption {
     font-size: 13px;
     color: #000;
@@ -210,6 +242,7 @@ body, ul {
     font-weight: bold;
     text-align: center;
 }
+
 .destaque a {
     justify-content: center;
     display: flex;
@@ -219,7 +252,8 @@ body, ul {
     font-weight: bold;
     margin: 30px 0;
 }
-.destaque a:hover{
+
+.destaque a:hover {
     color: #ff0000;
     font-size: 24px;
     transition: 0.3s;
@@ -229,6 +263,7 @@ body, ul {
 .destaque img {
     height: 220px;
 }
+
 /* Fim CSS Destaque */
 
 /* Início CSS Novidades */
@@ -254,6 +289,7 @@ body, ul {
     background-color: rgb(0, 68, 194);
     font-weight: 400;
 }
+
 /* Fim CSS Novidades */
 /* Início CSS Galeria */
 .galeria {
@@ -268,6 +304,7 @@ body, ul {
     >> Essa regra vale também para padding. <<
        */
 }
+
 .galeria .container {
     margin-left: 11%;
 }
@@ -276,6 +313,7 @@ body, ul {
     text-align: center;
     font-size: 24px;
 }
+
 .galeria p {
     text-align: center;
     width: 50%;
@@ -286,17 +324,19 @@ body, ul {
     width: 30%;
     margin: 14px auto 50px;
 }
+
 .galeria .gallery img {
     width: 80%;
     height: 80%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
-    display: block;  
+    display: block;
 }
+
 .galeria .gallery img:hover {
     -webkit-transform: scale(1.9);
     transform: scale(1.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Fim CSS Galeria */
@@ -306,50 +346,60 @@ body, ul {
 .rodape {
     padding: 50px 50px 0;
 }
+
 .rodape .container #img-logo {
     height: 50%;
     width: 50%;
     padding-left: 10px;
     transition: transform .3s;
-    display: block;  
+    display: block;
 }
+
 .rodape .container #img-logo:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 
 .rodape .info-contato p {
     margin: 0;
 }
+
 .rodape a {
     text-decoration: none;
     color: #000;
     font-size: 13px;
 }
+
 .rodape a:hover {
     font-weight: bold;
 }
+
 .rodape .redes-sociais {
     display: inline-block;
 }
+
 .rodape .redes-sociais img {
     width: 50px;
     height: 50px;
     padding-left: 0;
     margin-left: 0.7rem;
     transition: transform .3s;
-    border-radius: 15px; /* Arredondando div do obejto redes sociais */
+    border-radius: 15px;
+    /* Arredondando div do obejto redes sociais */
 }
+
 .rodape .redes-sociais img:hover {
     z-index: 1;
     transform: scale(1.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
-}   
+}
+
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
+
 /* Fim CSS Footer . */
 
 /* Início CSS Streaming */
@@ -366,15 +416,18 @@ body, ul {
     padding-right: 30px;
     display: flex;
 }
+
 .embed-container p {
     text-align: center;
     font-size: 20px;
 }
+
 .embed-container h2 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
+
 .embed-container iframe {
     position: relative;
     top: 0;
@@ -398,6 +451,7 @@ body, ul {
 .embed-container .col-lg-4 {
     margin-top: 30px;
 }
+
 .embed-container .col-lg-6 {
     margin-top: 30px;
 }
@@ -413,6 +467,7 @@ body, ul {
 .form_main {
     width: 100%;
 }
+
 .form_main h4 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -421,16 +476,19 @@ body, ul {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
+
 .text-left {
     border-bottom: 1px solid #a3aff0;
     padding-bottom: 9px;
     position: relative;
 }
+
 #text-local {
     border-bottom: 1px solid #a3aff0;
     margin-bottom: 9px;
     position: relative;
 }
+
 .text-left span {
     background: #111e8d none repeat scroll 0 0;
     bottom: -2px;
@@ -439,16 +497,19 @@ body, ul {
     position: absolute;
     width: 0px;
 }
+
 .form-horizontal {
     border-radius: 107px;
     padding: 6px;
 }
+
 .form-control[type="text"] {
     border: 1px solid #ccc;
     margin: 10px 0;
     padding: 10px 0 10px 5px;
     width: 100%;
 }
+
 .form-control[type="email"] {
     border: 1px solid #ccc;
     margin: 10px 0;
@@ -461,6 +522,7 @@ body, ul {
     padding: 10px 0 10px 5px;
     width: 100%;
 }
+
 .formbutton[type="submit"] {
     -moz-box-shadow: inset 0px 1px 0px 0px #87c0e6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #87c0e6;
@@ -478,24 +540,29 @@ body, ul {
     text-transform: uppercase;
     width: 30%;
 }
+
 .formbutton:hover {
     background-color: #31a1de;
 }
+
 .formbutton:active {
     position: relative;
     top: 1px;
 }
+
 .txt2:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #5793ef;
     transition: all 0.5s ease 0s;
 }
+
 /* Fim CSS Contato */
 /* Início CSS Mapa */
-.map{
+.map {
     width: 100%;
     height: 300px;
 }
+
 .map iframe {
     width: 100%;
     height: 100%;
@@ -510,6 +577,7 @@ body, ul {
     top: 200px;
     right: 20px;
 }
+
 .whatsapp img {
     height: 60px;
 }
@@ -524,21 +592,25 @@ body, ul {
     -webkit-animation-name: pulse;
     animation-name: pulse;
 }
+
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         -webkit-filter: brightness(100%);
     }
+
     100% {
         -webkit-transform: scale(1.1);
         -webkit-filter: brightness(110%);
     }
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1);
         filter: brightness(100%);
     }
+
     100% {
         transform: scale(1.1);
         filter: brightness(110%);
@@ -548,5 +620,4 @@ body, ul {
 /* Fim Efeito Pulse */
 
 /* Fim Whatsapp */
-
 
