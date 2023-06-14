@@ -1,0 +1,30 @@
+body {
+  background: #ecf0f3 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vrmedia-gallery {
+  max-width: 567px;
+  margin: 5rem auto;
+  background: white;
+  padding: 20px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  border-radius: 8px;
+  backdrop-filter: opacity(0.5)
+}
+
+.vrmedia-gallery img {
+  object-fit: cover;
+  width: 100%
+}
+
+.vrmedia-gallery .lSGallery {
+  display: inline-flex
+}
+
+.vrmedia-gallery .lSGallery li {
+  border-radius: 12px !important
+}
+
+.vrmedia-gallery .lSGallery li.active {
+  border: 1px solid #242423
+}
