@@ -574,7 +574,7 @@ ul {
 .whatsapp {
     position: fixed;
     z-index: 200;
-    top: 200px;
+    top: 400px;
     right: 20px;
 }
 
