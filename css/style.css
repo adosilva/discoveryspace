@@ -90,10 +90,11 @@ ul {
     transition: 0.3s;
     width: 100%;
     display: inline-flex;
+    height: 240px;
 }
 
-#carouselExampleInterval .carousel-inner img {
-    height: auto;
+.carousel-inner img {
+    object-fit: fill;
     /* width: 90%; */
 }
 
@@ -622,6 +623,12 @@ ul {
 /* Fim Whatsapp */
 
 /* Início CSS Card Produtos */
+
+.col-lg-4 .card {
+    border-style: none;
+    border: 0px;
+    min-height: 300px;
+}
 
 .text-center .mb-5 {
     margin-top: 20px;
